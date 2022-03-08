@@ -1,0 +1,11 @@
+form.ng-untouched {
+    background-color: lightgreen;
+}
+
+input.ng-dirty {
+    border: solid blue;
+}
+
+form .ng-invalid {
+    border: 2px solid red;
+}

@@ -1,0 +1,22 @@
+div {
+    /* display: flex; */
+    background-color: orange;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 10px;
+    border: 6px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    opacity:1;
+}
+
+.btndebut {
+    background-color: rgb(146, 243, 195);
+    opacity: 1;
+}
+
+.btnfin {
+    background-color: rgb(255, 187, 163);
+    opacity: 1;
+}

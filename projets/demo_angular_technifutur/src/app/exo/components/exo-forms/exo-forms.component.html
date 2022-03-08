@@ -1,0 +1,27 @@
+<h3>Formulaire Produits<h3>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="input-marqueproduit">Marque : </label>
+        <input type="text" id="input-marqueproduit" formControlName="marqueproduit">
+        <p *ngIf="form.controls['marqueproduit'].errors?.['required']" style="color:red">requis</p>
+    </div>
+
+    <div>
+        <label for="input-prixproduit">Prix : </label>
+        <input type="number" id="input-prixproduit" formControlName="prixproduit">
+    </div>
+
+    <div>
+        <label for="input-modeleproduit">Modèle : </label>
+        <input type="text" id="input-modeleproduit" formControlName="modeleproduit">
+    </div>
+
+    <div>
+        <label for="input-stockproduit">Stock : </label>
+        <input type="text" id="input-stockproduit" formControlName="stockproduit">
+        <p *ngIf="form.controls['stockproduit'].errors?.['pair']" style="color:red">{{form.controls['stockproduit'].errors?.['pair'].message}}</p>
+    </div>
+    <button type="submit">Envoyer</button>
+    <p *ngIf="form.errors?.['priceDoubleStock']" style="color:red">{{form.errors?.['priceDoubleStock'].message}}</p>
+</form>
