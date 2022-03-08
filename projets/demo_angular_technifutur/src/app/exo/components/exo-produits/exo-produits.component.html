@@ -14,7 +14,7 @@
         <label for="show-no-sale">Afficher les non en vente</label> -->
 
     </div>
-
+<!-- *ngIf="isConnected()" -->
 
     <div [ngClass]="{'envente': produits.en_vente == true, 'pasenvente': produits.en_vente == false}"
       *ngFor="let produits of products, let i=index">

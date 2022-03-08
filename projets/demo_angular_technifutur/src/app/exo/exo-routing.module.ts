@@ -5,6 +5,7 @@ import { ExoChildrenComponent } from './components/exo-children/exo-children.com
 import { ExoChronoComponent } from './components/exo-chrono/exo-chrono.component';
 import { ExoFormsComponent } from './components/exo-forms/exo-forms.component';
 import { ExoGestiontachesparentComponent } from './components/exo-gestiontachesparent/exo-gestiontachesparent.component';
+import { ExoPanierComponent } from './components/exo-panier/exo-panier.component';
 import { ExoParentComponent } from './components/exo-parent/exo-parent.component';
 import { ExoProduitsComponent } from './components/exo-produits/exo-produits.component';
 import { ExoBindingComponent } from './exo-binding/exo-binding.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
         { path:"produits", component:ExoProduitsComponent },
         { path:"parent", component:ExoParentComponent},
         { path:"forms", component:ExoFormsComponent},
-        { path:"taches", component:ExoGestiontachesparentComponent}
+        { path:"taches", component:ExoGestiontachesparentComponent},
+        { path:"panier", component:ExoPanierComponent}
     ]}
 ];
 

@@ -16,6 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ExoGestiontachesparentComponent } from './components/exo-gestiontachesparent/exo-gestiontachesparent.component';
 import { ExoGestiontachesenfantComponent } from './components/exo-gestiontachesenfant/exo-gestiontachesenfant.component';
 import { ExoGestiontachesenfantItemComponent } from './components/exo-gestiontachesenfant-item/exo-gestiontachesenfant-item.component';
+import { ExoMenuComponent } from './components/exo-menu/exo-menu.component';
+import { ExoPanierComponent } from './components/exo-panier/exo-panier.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ExoGestiontachesenfantItemComponent } from './components/exo-gestiontac
     ExoFormsComponent,
     ExoGestiontachesparentComponent,
     ExoGestiontachesenfantComponent,
-    ExoGestiontachesenfantItemComponent
+    ExoGestiontachesenfantItemComponent,
+    ExoMenuComponent,
+    ExoPanierComponent
   ],
   imports: [
     CommonModule,

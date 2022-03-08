@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { priceDoubleStock, PRODUIT_INSERT_FORM } from 'src/app/forms/produit.form';
+import { deuxLettresMarque, priceDoubleStock, PRODUIT_INSERT_FORM } from 'src/app/forms/produit.form';
 
 @Component({
   selector: 'app-exo-forms',
@@ -17,7 +17,7 @@ export class ExoFormsComponent implements OnInit {
   // });
 
   constructor(builder: FormBuilder) { 
-    this.form = builder.group(PRODUIT_INSERT_FORM, {validators: [priceDoubleStock, priceDoubleStock]});
+    this.form = builder.group(PRODUIT_INSERT_FORM, {validators: [priceDoubleStock, deuxLettresMarque]});
   }
 
   ngOnInit(): void {
