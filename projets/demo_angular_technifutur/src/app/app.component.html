@@ -5,7 +5,11 @@
         <p><a routerLink="/demo">demo  </a>
         <a routerLink="/exo">exo</a></p>
     </nav>
+
 </div>
+
+<div>Objectif : {{currentObjectif}}</div>
+<button type="button" (click)="onClick()">Refresh</button>
 
 <div>
     <router-outlet></router-outlet>

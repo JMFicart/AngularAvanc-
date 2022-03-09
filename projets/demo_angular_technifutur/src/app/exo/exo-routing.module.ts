@@ -6,6 +6,7 @@ import { ExoChronoComponent } from './components/exo-chrono/exo-chrono.component
 import { ExoFormsComponent } from './components/exo-forms/exo-forms.component';
 import { ExoGestiontachesparentComponent } from './components/exo-gestiontachesparent/exo-gestiontachesparent.component';
 import { ExoMenuComponent } from './components/exo-menu/exo-menu.component';
+import { ExoObjectif1Component } from './components/exo-objectif1/exo-objectif1.component';
 import { ExoPanierComponent } from './components/exo-panier/exo-panier.component';
 import { ExoParentComponent } from './components/exo-parent/exo-parent.component';
 import { ExoProduitsComponent } from './components/exo-produits/exo-produits.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
         { path:"forms", component:ExoFormsComponent},
         { path:"taches", component:ExoGestiontachesparentComponent},
         { path:"menu", component:ExoMenuComponent},
-        { path:"panier", component:ExoPanierComponent}
+        { path:"panier", component:ExoPanierComponent},
+        { path:"objectif", component:ExoObjectif1Component}
     ]}
 ];
 

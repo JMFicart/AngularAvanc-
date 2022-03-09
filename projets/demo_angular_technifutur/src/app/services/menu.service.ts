@@ -19,7 +19,6 @@ export class MenuService {
   }
 
   public removeProduit(i: number){
-    console.log(i)
     this.panier.splice(i, 1)
   }
 }

@@ -1,0 +1,100 @@
+html
+
+<h1>Chrono</h1>
+
+<p>{{chrono.minute}}:{{chrono.seconde}}</p>
+<button type="button" Id="Play" (click)="onValidate(1)" [hidden]="disPlay" >Play</button>
+<button id="Pause" [hidden]="disPause" (click)="onValidate(2)">Pause</button>
+<button id="Reset" [hidden]="disReset" (click)="onValidate(3)">Reset</button>
+
+css
+
+spec
+
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ChronoComponent } from './chrono.component';
+
+describe('ChronoComponent', () => {
+  let component: ChronoComponent;
+  let fixture: ComponentFixture<ChronoComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ ChronoComponent ]
+    })
+    .compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(ChronoComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+
+ts
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-chrono',
+  templateUrl: './chrono.component.html',
+  styleUrls: ['./chrono.component.css']
+})
+export class ChronoComponent implements OnInit {
+
+  constructor() {console.log('constructor') }
+
+  tempspasse: string = "00:00";
+
+  disPlay: boolean = false;
+  disPause: boolean = false;
+  disReset: boolean = true;
+
+  inter?: NodeJS.Timeout;
+  minute: number =0;
+  seconde: number = 0;
+
+  reset(): void {
+    this.minute = 0;
+    this.seconde = 0;
+  }
+
+  pause() {
+    if(this.inter) {
+      console.log('pause');
+      clearInterval(this.inter)
+      this.inter = undefined;
+    }
+  }
+    
+  play() {
+    console.log('play');
+    this.inter = setInterval(() => {console.log(this.seconde);
+                if (this.seconde===59){
+                  this.minute++;
+                  this.seconde=0;
+                } else {
+                  this.seconde++;
+                }}, 1000);
+    // dispPause = true;
+    }
+  
+
+  chrono: Chrono = {
+    minute = 0,
+    seconde = 0
+  };
+  
+  ngOnInit(): void {
+  }
+
+  
+}
+
+

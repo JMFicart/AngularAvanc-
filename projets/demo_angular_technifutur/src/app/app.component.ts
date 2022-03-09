@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ObjectifService } from './services/objectif.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo_angular_technifutur';
+  currentObjectif: string = ""
+
+  constructor(private service: ObjectifService) {}
+
+  onClick(){
+    this.currentObjectif = this.service.objectif
+  }
 }
+
