@@ -10,10 +10,10 @@ export class AppComponent {
   title = 'demo_angular_technifutur';
   currentObjectif: string = ""
 
-  constructor(private service: ObjectifService) {}
-
-  onClick(){
-    this.currentObjectif = this.service.objectif
+  constructor(private service: ObjectifService) {
+    service.obsObjectif.subscribe(info =>this.currentObjectif = info)
+    // alert("Emission d'infos")
   }
+
 }
 

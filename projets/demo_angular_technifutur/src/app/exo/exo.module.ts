@@ -19,7 +19,7 @@ import { ExoGestiontachesenfantItemComponent } from './components/exo-gestiontac
 import { ExoMenuComponent } from './components/exo-menu/exo-menu.component';
 import { ExoPanierComponent } from './components/exo-panier/exo-panier.component';
 import { ExoObjectif1Component } from './components/exo-objectif1/exo-objectif1.component';
-import { ExoObjectif2Component } from './components/exo-objectif2/exo-objectif2.component';
+import { ExoColorswapComponent } from './components/exo-colorswap/exo-colorswap.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { ExoObjectif2Component } from './components/exo-objectif2/exo-objectif2.
     ExoMenuComponent,
     ExoPanierComponent,
     ExoObjectif1Component,
-    ExoObjectif2Component
+    ExoColorswapComponent
   ],
   imports: [
     CommonModule,

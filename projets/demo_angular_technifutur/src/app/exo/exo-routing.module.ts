@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExoChildrenComponent } from './components/exo-children/exo-children.component';
 // import { RouterModule, Routes } from '@angular/router';
 import { ExoChronoComponent } from './components/exo-chrono/exo-chrono.component';
+import { ExoColorswapComponent } from './components/exo-colorswap/exo-colorswap.component';
 import { ExoFormsComponent } from './components/exo-forms/exo-forms.component';
 import { ExoGestiontachesparentComponent } from './components/exo-gestiontachesparent/exo-gestiontachesparent.component';
 import { ExoMenuComponent } from './components/exo-menu/exo-menu.component';
@@ -23,7 +24,8 @@ const routes: Routes = [
         { path:"taches", component:ExoGestiontachesparentComponent},
         { path:"menu", component:ExoMenuComponent},
         { path:"panier", component:ExoPanierComponent},
-        { path:"objectif", component:ExoObjectif1Component}
+        { path:"objectif", component:ExoObjectif1Component},
+        { path:"colorswap", component:ExoColorswapComponent}
     ]}
 ];
 
