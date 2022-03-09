@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService } from 'src/app/services/menu.service';
 
 @Component({
   selector: 'app-exo-panier',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exo-panier.component.css']
 })
 export class ExoPanierComponent implements OnInit {
-
-  constructor() { }
+    
+  constructor(private service: MenuService) {}
 
   ngOnInit(): void {
   }
 
+  panier = this.service.contenu
+
+  onDelete(i:number){
+    this.service.removeProduit(i)
+    this.panier = this.service.contenu
+  }
 }
