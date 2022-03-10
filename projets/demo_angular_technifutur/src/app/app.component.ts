@@ -10,7 +10,7 @@ import { ObjectifService } from './services/objectif.service';
 export class AppComponent {
   title = 'demo_angular_technifutur';
   currentObjectif: string = "";
-  currentColor: string = "cyan";
+  currentColor: string = "lightseagreen";
 
   constructor(private service: ObjectifService, private serviceColor: ColorswapService) {
     service.obsObjectif.subscribe(info =>this.currentObjectif = info)

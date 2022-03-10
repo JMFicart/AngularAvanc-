@@ -1,0 +1,26 @@
+<form [formGroup]="platForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for="id">Id : </label><br>
+        <input type="number" id="id" formControlName="id">
+    </div>
+
+    <div>
+        <label for="nom">Nom : </label><br>
+        <input type="text" id="nom" formControlName="nom">
+    </div>
+
+    <div>
+        <label for="type">Type : </label><br>
+        <input type="text" id="type" formControlName="type">
+    </div>
+
+    <div>
+        <label for="prix">Prix : </label><br>
+        <input type="number" id="prix" formControlName="prix">
+    </div>
+
+    <button type="submit">Ajouter</button>
+
+</form>
+

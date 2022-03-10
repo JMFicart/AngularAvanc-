@@ -17,6 +17,7 @@ import { GreenBgDirective } from './directives/green-bg.directive';
 import { Part21DirectiveDirective } from './directives/part2-1-directive.directive';
 import { DemoFormsComponent } from './components/demo-forms/demo-forms.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ObsDemoComponent } from './components/obs-demo/obs-demo.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ChildTextDirectiveDirective,
     GreenBgDirective,
     Part21DirectiveDirective,
-    DemoFormsComponent
+    DemoFormsComponent,
+    ObsDemoComponent
   ],
   imports: [
     CommonModule,

@@ -20,6 +20,8 @@ import { ExoMenuComponent } from './components/exo-menu/exo-menu.component';
 import { ExoPanierComponent } from './components/exo-panier/exo-panier.component';
 import { ExoObjectif1Component } from './components/exo-objectif1/exo-objectif1.component';
 import { ExoColorswapComponent } from './components/exo-colorswap/exo-colorswap.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ExoAdditemComponent } from './components/exo-additem/exo-additem.component';
 
 @NgModule({
   declarations: [
@@ -38,14 +40,16 @@ import { ExoColorswapComponent } from './components/exo-colorswap/exo-colorswap.
     ExoMenuComponent,
     ExoPanierComponent,
     ExoObjectif1Component,
-    ExoColorswapComponent
+    ExoColorswapComponent,
+    ExoAdditemComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ExoRoutingModule,
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class ExoModule { }

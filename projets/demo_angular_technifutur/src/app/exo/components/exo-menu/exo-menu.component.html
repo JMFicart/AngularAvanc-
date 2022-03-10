@@ -13,3 +13,9 @@
     <button type="submit">Ajouter</button>
 
 </form>
+
+<p>Panier</p>
+
+<div *ngFor="let ligne of panier, let i=index;" >
+    <p><span>Produit : {{ligne.produit}} </span> <span>Qté : {{ligne.quantity}}</span> <button (click) = "onDelete(i)">Supprimer</button></p>
+</div>

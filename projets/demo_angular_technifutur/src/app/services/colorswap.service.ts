@@ -18,11 +18,7 @@ export class ColorswapService {
   }
 
   public swapColor(){
-    if(this._currentColor==this._color1){
-      this._currentColor=this._color2
-    } else {
-      this._currentColor=this._color1
-    }
+    this._currentColor = this._currentColor==this._color1 ? this._color2 : this._color1
     this.obsColorswap.next(this._currentColor)
   }
 }

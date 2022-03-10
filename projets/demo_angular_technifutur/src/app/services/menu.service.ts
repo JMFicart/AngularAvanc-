@@ -1,15 +1,19 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Subject } from 'rxjs';
 import { Menu } from '../models/menu.models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
-  panier : Array<Menu>
+  panier : Array<Menu> = []
 
-  constructor() {this.panier = []}
+  constructor() {}
 
-  public addProduit(toAdd: Menu): boolean{
+  panierChanged = new Subject<Menu[]>()
+  panierChanged1 = new BehaviorSubject<Menu[]>(this.panier.slice())
+
+  public addProduit(toAdd: Menu){
     this.panier.push(toAdd)
     return true;
   }

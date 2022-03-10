@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ExoAdditemComponent } from './components/exo-additem/exo-additem.component';
 import { ExoChildrenComponent } from './components/exo-children/exo-children.component';
 // import { RouterModule, Routes } from '@angular/router';
 import { ExoChronoComponent } from './components/exo-chrono/exo-chrono.component';
@@ -25,7 +26,8 @@ const routes: Routes = [
         { path:"menu", component:ExoMenuComponent},
         { path:"panier", component:ExoPanierComponent},
         { path:"objectif", component:ExoObjectif1Component},
-        { path:"colorswap", component:ExoColorswapComponent}
+        { path:"colorswap", component:ExoColorswapComponent},
+        { path:"plat", component:ExoAdditemComponent}
     ]}
 ];
 
