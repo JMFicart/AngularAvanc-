@@ -5,13 +5,13 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class ColorswapService {
-  private _color1: string = 'white'
-  private _color2: string = 'plum'
-  private _currentColor: string = 'white'
+  private _color1: string = 'plum'
+  private _color2: string = 'red'
+  private _currentColor: string = 'plum'
 
   obsColorswap = new Subject<string>();
 
-  constructor() {this._currentColor='white'}
+  constructor() {}
 
   public getColor(){
     return this._currentColor
@@ -19,15 +19,10 @@ export class ColorswapService {
 
   public swapColor(){
     if(this._currentColor==this._color1){
-      this._currentColor==this._color2
+      this._currentColor=this._color2
     } else {
-      this._currentColor==this._color1
+      this._currentColor=this._color1
     }
     this.obsColorswap.next(this._currentColor)
   }
-
-  // public setColor(newColor: string){
-  //   this._currentColor = newColor
-  //   this.obsColorswap.next(this._currentColor)
-  // }
 }

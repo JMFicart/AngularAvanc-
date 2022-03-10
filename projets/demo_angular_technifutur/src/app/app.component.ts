@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ColorswapService } from './services/colorswap.service';
 import { ObjectifService } from './services/objectif.service';
 
 @Component({
@@ -8,10 +9,12 @@ import { ObjectifService } from './services/objectif.service';
 })
 export class AppComponent {
   title = 'demo_angular_technifutur';
-  currentObjectif: string = ""
+  currentObjectif: string = "";
+  currentColor: string = "cyan";
 
-  constructor(private service: ObjectifService) {
+  constructor(private service: ObjectifService, private serviceColor: ColorswapService) {
     service.obsObjectif.subscribe(info =>this.currentObjectif = info)
+    serviceColor.obsColorswap.subscribe(infocolor =>this.currentColor = infocolor)
     // alert("Emission d'infos")
   }
 
