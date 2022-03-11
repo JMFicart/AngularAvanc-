@@ -20,7 +20,8 @@ export class AjouttacheComponent implements OnInit {
   }
 
   onSubmit(){
-    // this.service.addProduit(this.ajouttacheForm.value)
-    console.log(this.ajoutTacheForm.value)
+    this.service.addTache(this.ajoutTacheForm.value)
+    // console.log(this.ajoutTacheForm.value)
   }
 }
+

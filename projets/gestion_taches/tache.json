@@ -1,46 +1,13 @@
 {
-  "plats": [
+  "taches": [
     {
       "id": 1,
-      "nom": "pate",
-      "type": "plat",
-      "prix": 8
-    },
-    {
-      "id": 2,
-      "nom": "pizza",
-      "type": "plat",
-      "prix": 10
-    },
-    {
-      "id": 3,
-      "nom": "croquettes",
-      "type": "entree",
-      "prix": 6
-    },
-    {
-      "id": 4,
-      "nom": "glace",
-      "type": "dessert",
-      "prix": 4
-    },
-    {
-      "id": 10,
-      "nom": "riz",
-      "type": "plat",
-      "prix": 9
-    },
-    {
-      "id": 11,
-      "nom": "crepe",
-      "type": "dessert",
-      "prix": 5
-    },
-    {
-      "id": 15,
-      "nom": "Zakouski",
-      "type": "Entrée",
-      "prix": 4
+      "intitule": "Etude Java",
+      "description": "Etudier Java et Angular",
+      "datecreation": "11-03-2022",
+      "deadline": "15-06-2022",
+      "datetermine": "10-06-2022",
+      "priorite": "haute"
     }
   ]
 }
