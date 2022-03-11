@@ -1,0 +1,9 @@
+.header {
+    background-color: darkseagreen;
+}
+
+.classnav {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}

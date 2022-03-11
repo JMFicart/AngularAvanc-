@@ -22,6 +22,7 @@ import { ExoObjectif1Component } from './components/exo-objectif1/exo-objectif1.
 import { ExoColorswapComponent } from './components/exo-colorswap/exo-colorswap.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ExoAdditemComponent } from './components/exo-additem/exo-additem.component';
+import { ExoPlatComponent } from './components/exo-plat/exo-plat.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ExoAdditemComponent } from './components/exo-additem/exo-additem.compon
     ExoPanierComponent,
     ExoObjectif1Component,
     ExoColorswapComponent,
-    ExoAdditemComponent
+    ExoAdditemComponent,
+    ExoPlatComponent
   ],
   imports: [
     CommonModule,

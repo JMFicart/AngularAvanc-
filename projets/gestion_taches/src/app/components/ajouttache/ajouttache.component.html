@@ -1,0 +1,17 @@
+<p>ajouttache works!</p>
+<form [formGroup]="ajoutTacheForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for="produit">Produit</label><br>
+        <input type="text" id="produit" formControlName="produit">
+    </div>
+
+    <div>
+        <label for="quantity">Quantité</label><br>
+        <input type="text" id="quantity" formControlName="quantity">
+    </div>
+
+    <button type="submit">Ajouter</button>
+
+</form>
+
