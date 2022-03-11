@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { AJOUTTACHE_FORM } from 'src/app/forms/ajouttache.form';
+import { TacheService } from 'src/app/services/tacheservice.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-ajouttache',
@@ -8,17 +10,17 @@ import { AJOUTTACHE_FORM } from 'src/app/forms/ajouttache.form';
   styleUrls: ['./ajouttache.component.css']
 })
 export class AjouttacheComponent implements OnInit {
-  ajouttacheForm: FormGroup;
+  ajoutTacheForm: FormGroup;
 
-  constructor(builder: FormBuilder, private service: MenuService, private client: HttpClient) {
-    this.ajouttacheForm = builder.group(AJOUTTACHE_FORM)
+  constructor(builder: FormBuilder, private service: TacheService) {
+    this.ajoutTacheForm = builder.group(AJOUTTACHE_FORM)
   }
 
   ngOnInit(): void {
   }
 
   onSubmit(){
-    this.service.addProduit(this.ajouttacheForm.value)
+    // this.service.addProduit(this.ajouttacheForm.value)
+    console.log(this.ajoutTacheForm.value)
   }
-
 }

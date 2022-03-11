@@ -9,6 +9,7 @@ import { CloturetacheComponent } from './components/cloturetache/cloturetache.co
 import { AnnulationtacheComponent } from './components/annulationtache/annulationtache.component';
 import { ListetacheComponent } from './components/listetache/listetache.component';
 import { DetailtacheComponent } from './components/detailtache/detailtache.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DetailtacheComponent } from './components/detailtache/detailtache.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

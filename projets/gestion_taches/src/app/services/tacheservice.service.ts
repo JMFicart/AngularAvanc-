@@ -4,12 +4,12 @@ import { Tache } from '../models/tache.model';
 @Injectable({
   providedIn: 'root'
 })
-export class TacheserviceService {
+export class TacheService {
 
   constructor() { }
 
   public addTache(toAdd: Tache){
-    return true;
+    console.log(toAdd)
   }
 }
 
