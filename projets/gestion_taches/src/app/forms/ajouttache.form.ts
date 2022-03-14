@@ -6,6 +6,6 @@ export const AJOUTTACHE_FORM = {
     'datecreation' : ['', [Validators.required]],
     'deadline' : [''],
     'datetermine' : [''],
-    'priorite' : ['',[Validators.required, Validators.minLength(1)]]
+    'priorite' : ['basse',[Validators.required, Validators.minLength(1)]]
 }
 

@@ -9,7 +9,7 @@ import { ModiftacheComponent } from './components/modiftache/modiftache.componen
 
 const routes: Routes = [
   // ne pas oublier le pathMatch: 'full', sinon boucle inf.
-  { path:"", redirectTo:"accueil", pathMatch:'full' },
+  // { path:"", redirectTo:"accueil", pathMatch:'full' },
   { path:"ajouttache", component: AjouttacheComponent },
   { path:"annulationtache", component: AnnulationtacheComponent },
   { path:"cloturetache", component: CloturetacheComponent },
@@ -17,7 +17,7 @@ const routes: Routes = [
   { path:"listetaches", component: ListetacheComponent },
   { path:"detailtache", component: DetailtacheComponent },
   // "**" s'active pour toutes les routes, c'est une wildcard
-  { path:"**", redirectTo:"404" }
+  // { path:"**", redirectTo:"404" }
 ];
 
 @NgModule({
