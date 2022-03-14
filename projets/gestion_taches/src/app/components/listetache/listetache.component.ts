@@ -18,4 +18,8 @@ export class ListetacheComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(): void {
+
+  }
+
 }
