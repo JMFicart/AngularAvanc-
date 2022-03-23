@@ -1,0 +1,16 @@
+<h3>Pair - Impair</h3>
+
+<br>
+
+<form [formGroup]="ajoutTacheForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for="nombre">Nombre : </label><br>
+        <input type="text" id="nombre" formControlName="nombre">
+    </div>
+
+    <br>
+    <button type="submit">Ajouter</button>
+    <button type="reset">Reset</button>
+
+</form>

@@ -1,5 +1,11 @@
-<p>{{ chrono | chrono }}</p>
+<p>{{ chrono | chrono:format }}</p>
 
 <button (click)="play()">play</button>
-<button (click)="play()">pause</button>
-<button (click)="play()">reset</button>
+<button (click)="pause()">pause</button>
+<button (click)="reset()">reset</button>
+
+<br>
+
+<input type="radio" value="small" [(ngModel)]="format"> small <br>
+<input type="radio" value="mid" [(ngModel)]="format"> mid <br>
+<input type="radio" value="long" [(ngModel)]="format"> long

@@ -1,8 +1,6 @@
 <h3>Parent</h3>
 
-<div class="bg">
-    Parent
-    <app-exo-children id="enfant1" >enfant1</app-exo-children>   
-    <app-exo-children id="enfant2" >enfant2</app-exo-children>
+<div>
+    <app-exo-children [isRedAbove]="redAbove" (clicked-square)="onClickedSquare()"></app-exo-children>
+    <app-exo-children2 [isRedAbove]="redAbove" (clicked-square)="onClickedSquare()"></app-exo-children2>
 </div>
-

@@ -7,12 +7,13 @@ import { Produits } from 'src/app/models/produits.model';
   styleUrls: ['./exo-produits.component.css']
 })
 export class ExoProduitsComponent implements OnInit {
-  bgcolorVente: string = 'white';
-  bgcolorPasVente: string = 'red';
-  marque:string = '';
-  modele:string = '';
-
-  // showNoSale: true;
+  // bgcolorVente: string = 'white';
+  // bgcolorPasVente: string = 'red';
+  // marque:string = '';
+  // modele:string = '';
+  sortingMethod?: 'marque'|'prix'|'stock'; 
+  showNoSale = true;
+  asc: boolean = true;
 
   constructor() { }
   
@@ -25,30 +26,14 @@ export class ExoProduitsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleVente(toToggle: Produits){
-    toToggle.en_vente = !toToggle.en_vente;
-  }
-
   onDelete(index:number){
-    if (confirm('Etes vous sur ?')) {
+    if (confirm('Etes-vous sûr ?')) {
       this.products.splice(index, 1);
     }
   }
-  
-  mvtVente(marque: string, modele: string) {
-    this.marque = marque;
-    this.modele = modele;
-    // console.log(this.marque + ' ' + this.modele);
-    this.products.forEach(this.changeStatus);
-  }
 
-  changeStatus(item:Produits, index:number, arr:Produits[]){
-    console.log('changeStatus');
-    if (item.marque == this.marque && item.modele == this.modele) {
-      console.log(index);
-      console.log('Avant ' + arr[index].marque + ' ' + arr[index].modele + ' ' + arr[index].en_vente);
-      arr[index].en_vente = !arr[index].en_vente;
-      console.log('Après ' + arr[index].marque + ' ' + arr[index].modele + ' ' + arr[index].en_vente);
-    }
+  onToggleEnVente(toToggle: Produits){
+    toToggle.en_vente = !toToggle.en_vente;
   }
+  
 }

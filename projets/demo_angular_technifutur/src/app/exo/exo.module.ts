@@ -7,10 +7,9 @@ import { ExoComponent } from './exo.component';
 import { ExoChronoComponent } from './components/exo-chrono/exo-chrono.component';
 import { SharedModule } from '../shared/shared.module';
 import { ExoProduitsComponent } from './components/exo-produits/exo-produits.component';
-import { ExoChildrenComponent } from './components/exo-children/exo-children.component';
 import { ExoParentComponent } from './components/exo-parent/exo-parent.component';
-import { ExoEnfant2Component } from './components/exo-enfant2/exo-enfant2.component';
-import { ExoChildren2Component } from './components/exo-children2/exo-children2.component';
+import { ExoChildrenComponent } from './components/exo-parent/exo-children/exo-children.component';
+import { ExoChildren2Component } from './components/exo-parent/exo-children2/exo-children2.component';
 import { ExoFormsComponent } from './components/exo-forms/exo-forms.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ExoGestiontachesparentComponent } from './components/exo-gestiontachesparent/exo-gestiontachesparent.component';
@@ -23,6 +22,7 @@ import { ExoColorswapComponent } from './components/exo-colorswap/exo-colorswap.
 import { HttpClientModule } from '@angular/common/http';
 import { ExoAdditemComponent } from './components/exo-additem/exo-additem.component';
 import { ExoPlatComponent } from './components/exo-plat/exo-plat.component';
+import { ExoPairimpairComponent } from './components/exo-pairimpair/exo-pairimpair.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,6 @@ import { ExoPlatComponent } from './components/exo-plat/exo-plat.component';
     ExoProduitsComponent,
     ExoChildrenComponent,
     ExoParentComponent,
-    ExoEnfant2Component,
     ExoChildren2Component,
     ExoFormsComponent,
     ExoGestiontachesparentComponent,
@@ -43,7 +42,8 @@ import { ExoPlatComponent } from './components/exo-plat/exo-plat.component';
     ExoObjectif1Component,
     ExoColorswapComponent,
     ExoAdditemComponent,
-    ExoPlatComponent
+    ExoPlatComponent,
+    ExoPairimpairComponent
   ],
   imports: [
     CommonModule,

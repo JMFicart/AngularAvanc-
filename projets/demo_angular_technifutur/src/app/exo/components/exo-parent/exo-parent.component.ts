@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-exo-parent',
@@ -6,15 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exo-parent.component.css']
 })
 export class ExoParentComponent implements OnInit {
+  redAbove = true;
 
   constructor() { }
-
-
 
   ngOnInit(): void {
   }
 
-  onClickParent(){
-    alert('clicked on square');
+  onClickedSquare(){
+    this.redAbove = !this.redAbove;
   }
 }

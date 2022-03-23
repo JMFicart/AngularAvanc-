@@ -1,15 +1,15 @@
-.envente {
-    background-color: white;
+.indispo {
+    background-color: rgb(240, 163, 163);
 }
 
-.pasenvente {
-    background-color: pink;
+.few-stock {
+    color: rgb(145, 135, 45);
 }
 
-.fewStock {
-    color: yellow;
+.much-stock {
+    color: rgb(56, 161, 56);
 }
 
-.muchStock {
-    color: greenyellow;
+.no-stock {
+    color: rgb(136, 32, 32);
 }
