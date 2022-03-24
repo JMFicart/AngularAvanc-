@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.navclass {
+      display: flex;
+  }
+  
+  .navlink {
+      margin: 0 10px;
+      white-space: nowrap;
+  }
+  
+  .navlink > a {
+      text-decoration: none;
+      color: black;
+  }
+  
+  .navlink > a:hover {
+      color: rgb(165, 165, 125);
+  }

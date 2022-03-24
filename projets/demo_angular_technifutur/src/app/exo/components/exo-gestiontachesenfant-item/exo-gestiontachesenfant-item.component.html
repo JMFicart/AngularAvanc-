@@ -1,8 +1,8 @@
 <form align="center">
     <div class=""ajouttache>
-        <button type="button" id="btnMonter" class="btnmonter">Monter</button>
-        <input type="text" id="nomtache" formControlName="nomTache">
-        <button type="button" id="btnDescendre" class="btndescendre">Descendre</button>
+        <button class="btnmonter" (click)="move(true)" [disabled]="isFirst">Up</button>
+        {{ tache.libelle }} - {{tache.datecreation | date:'dd-MM-YYYY'}}
+        <button class="btndescendre" (click)="move(false)" [disabled]="isLast">Down</button>
     </div>
 </form>
 

@@ -1,8 +1,13 @@
 
-
 <div class="parent">
     <h2>Gestion des tâches avec priorité</h2><br>
 
-    <app-exo-gestiontachesenfant></app-exo-gestiontachesenfant>
-    <app-exo-gestiontachesenfant-item></app-exo-gestiontachesenfant-item>
+    <app-exo-gestiontachesenfant (add)="onAdd($event)"></app-exo-gestiontachesenfant>
+    <app-exo-gestiontachesenfant-item
+        *ngFor="let tache of listTache; let i=index" 
+        [tache]="tache" 
+        [first]="i === 0"
+        [last]="i === listTache.length-1"
+        (move)="onTaskMove(i, $event)">
+    </app-exo-gestiontachesenfant-item>
 </div>

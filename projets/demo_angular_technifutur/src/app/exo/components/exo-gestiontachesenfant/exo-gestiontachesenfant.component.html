@@ -1,10 +1,7 @@
-<!-- <form [formGroup]="ajouttache"> -->
-<form>
-    <div class=""ajouttache>
-        <label for="nomtache">Ajouter une tâche</label><br>
-        <input type="text" id="nomtache" formControlName="nomTache">
-        <button type="button" id="btnAuDebut" class="btndebut">Au début</button>
-        <button type="button" id="btnaLaFin" class="btnfin">A la fin</button>
-    </div>
-</form>
+<div class=""ajouttache>
+    <label for="nomtache">Ajouter une tâche</label><br>
+    <input type="text" id="nomtache" [(ngModel)]="nom_tache">
+    <button (click)="onAdd(true)" [disabled]="!canAdd()" class="btndebut">Au début</button>
+    <button (click)="onAdd(false)" [disabled]="!canAdd()" class="btnfin">A la fin</button>
+</div>
 
